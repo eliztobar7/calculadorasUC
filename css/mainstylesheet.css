@@ -1,0 +1,63 @@
+body {
+	background-image: url("../images/brick.jpg");	
+	margin: 0;
+}
+
+table {
+	background: #fff;
+	border: 10px outset #808080;
+	width: 50%;
+	margin: 0 auto;
+	border-spacing: 15px;
+}
+
+tr {
+	background: #FFCCCC;
+}
+
+th {
+	padding: 40px; 
+}
+th img {
+	height: 70px;
+
+}
+
+.img1 {
+	width: 125px;
+	margin: 0;
+	padding: 0;
+}
+
+.img2 {
+	width: 225px;
+}
+
+a {
+	display: block;
+}
+
+a.uc {
+	text-align: center;
+	font-size: 12px;
+}
+
+a:visited{
+	color: #0000EE;
+}
+
+h1 {
+	font-weight: 400; 
+	font-size: 22px;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+p {
+	font-size: 14px;
+}
+
+ul.cal {
+	list-style-image: url(../images/calculatorImage.png);
+}
+
