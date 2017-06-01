@@ -9,7 +9,11 @@
     <title>Calculadoras UC</title>  
     <link rel="stylesheet" href="css/mainstylesheet.css">   
     <script language="javascript">   
+        function limpiar(){
+            document.getElementById('nota').innerHTML="";
+        }
         function print(){
+
             valor = document.getElementById("texto").value;
             console.log(valor); // sale por consola
             if (valor >= 90) { 
@@ -21,10 +25,7 @@
             }   else {
                 document.getElementById('nota').innerHTML += 'No presento';
             }            
-        }
-        function limpiarFormulario() {
-            document.getElementById("miForm").reset();
-        }
+        }        
     </script>
 </head>
 
@@ -50,25 +51,10 @@
                     <td>
                         <H1>Quienes Somos</H1>
                         <p>Calculadoras de Colombia ha implementado estas calculadoras para su uso. Esperamos mejorar nuestra oferta de herramientas muy pronto. Esperamos sus visitas.</p>
-                        <H1>Calculadora de calificaciones</H1><!--
-                        <script language="javascript">
-                            var nota;
-                            nota=prompt('Ingrese su nota:',''); 
-                            if (nota >= 90) { 
-                                document.write('Su calificación fue A');
-                            }   else if (nota >= 80) {
-                                document.write('Su calificación fue B');
-                            }   else if (nota >= 70) {
-                                document.write('Su calificación fue C');
-                            }   else {
-                                document.write('No presento');
-                            }
-                        </script>-->
-                         
+                        <H1>Calculadora de calificaciones</H1>                                                
                         <form id="formulario" method="Post">
                             <input type="number" id="texto" /><br/>
-                            <input type="button" name="enviar" value="Enviar" onclick="print();"/><br>
-                            <input type="reset" name="limpiar" value="limpiar"/><br>
+                            <input type="button" name="enviar" value="Enviar" onclick="limpiar(); print();"/><br>
                         </form>
                         <div id="nota"></div>                        
                         <ul class="cal">
@@ -91,6 +77,5 @@
             </a>
         </p>    
     </section>
-
 </body> 
 </html> 
